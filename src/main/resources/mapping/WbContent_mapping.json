@@ -1,0 +1,29 @@
+{
+  "content": {
+    "properties": {
+      "sentiment": {
+        "type": "integer"
+      },
+      "uid": {
+        "type": "integer"
+      },
+      "comments_count": {
+        "type": "integer"
+      },
+      "publish_time": {
+        "type": "long"
+      },
+      "mid": {
+        "type": "long"
+      },
+      "reposts_count": {
+        "type": "integer"
+      },
+      "text": {
+        "type": "text",
+        "analyzer": "ik_max_word",
+        "search_analyzer": "ik_smart"
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "user": {
+    "properties": {
+      "friends_count": {
+        "type": "integer"
+      },
+      "birthyear": {
+        "type": "integer"
+      },
+      "gender": {
+        "type": "text",
+        "index": "not_analyzed"
+      },
+      "favourites_count": {
+        "type": "integer"
+      },
+      "followers_count": {
+        "type": "integer"
+      },
+      "name": {
+        "type": "text",
+        "index": "not_analyzed"
+      },
+      "id": {
+        "type": "integer"
+      },
+      "url": {
+        "type": "text",
+        "index": "not_analyzed"
+      }
+    }
+  }
+}
