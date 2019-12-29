@@ -9,5 +9,5 @@ import org.springframework.data.elasticsearch.repository.ElasticsearchRepository
  * @author:
  * @create: 2019-12-28
  **/
-public interface WbUserJpa extends ElasticsearchRepository<WbUser, Long> {
+public interface WbUserJpa extends ElasticsearchRepository<WbUser, String> {
 }

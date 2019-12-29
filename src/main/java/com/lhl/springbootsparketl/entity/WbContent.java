@@ -9,6 +9,8 @@ import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
 import org.springframework.data.elasticsearch.annotations.Mapping;
 
+import java.io.Serializable;
+
 /**
  * WbContent
  *
@@ -18,9 +20,9 @@ import org.springframework.data.elasticsearch.annotations.Mapping;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(indexName = "wb", type = "content")
+@Document(indexName = "wb_t", type = "content")
 @Mapping(mappingPath = "mapping/WbContent_mapping.json")
-public class WbContent {
+public class WbContent implements Serializable {
 
 
     /**
@@ -34,8 +36,8 @@ public class WbContent {
      */
 
     @Id
-    private Long mid;
-    private Integer uid;
+    private String mid;
+    private String uid;
     private Long publish_time;
     private String text;
     private Integer reposts_count;

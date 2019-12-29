@@ -5,7 +5,7 @@
         "type": "integer"
       },
       "uid": {
-        "type": "integer"
+        "type": "keyword"
       },
       "comments_count": {
         "type": "integer"
@@ -14,7 +14,7 @@
         "type": "long"
       },
       "mid": {
-        "type": "long"
+        "type": "keyword"
       },
       "reposts_count": {
         "type": "integer"

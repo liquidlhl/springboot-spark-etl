@@ -22,7 +22,7 @@
         "index": "not_analyzed"
       },
       "id": {
-        "type": "integer"
+        "type": "keyword"
       },
       "url": {
         "type": "text",

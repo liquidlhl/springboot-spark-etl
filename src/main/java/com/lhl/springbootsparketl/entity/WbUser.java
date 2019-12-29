@@ -7,6 +7,8 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Mapping;
 
+import java.io.Serializable;
+
 /**
  * WeiboUser
  *
@@ -16,9 +18,9 @@ import org.springframework.data.elasticsearch.annotations.Mapping;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(indexName = "wb", type = "user")
+@Document(indexName = "wb_t", type = "user")
 @Mapping(mappingPath = "mapping/WbUser_mapping.json")
-public class WbUser {
+public class WbUser implements Serializable {
 
 
     /**
@@ -33,7 +35,7 @@ public class WbUser {
      */
 
     @Id
-    private Integer id;
+    private String id;
     private String name;
     private Integer birthyear;
     private String url;

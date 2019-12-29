@@ -14,9 +14,9 @@ import java.util.List;
  * @author:
  * @create: 2019-12-28
  **/
-public interface WbContentJpa extends ElasticsearchRepository<WbContent, Long> {
+public interface WbContentJpa extends ElasticsearchRepository<WbContent, String> {
 
 //    List<WbContent> findByText(String text);
     List<WbContent> findByText(String text);
-    Page<WbContent> findByTextand(String text, Pageable pageable);
+    Page<WbContent> findByText(String text, Pageable pageable);
 }
