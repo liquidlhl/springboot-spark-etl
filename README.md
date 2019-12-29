@@ -42,7 +42,7 @@ springboot 2.0.1.release
 
 
 ## etl流程 ##
-0.程序初始化(主要是JavaSparkContext),目前是standalone模式运行(后续增加on yarn模式支持代码)  
+0.程序初始化(主要是JavaSparkContext)(后续增加on yarn模式支持代码)  
 ```
 {
     "sentiment":"-1,0",
